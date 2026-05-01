@@ -1,3 +1,18 @@
+/* variáves css*/
+:root {
+    --space-sm: 10px;
+    --space-md: 15px;
+    --space-lg: 30px; 
+
+    --fs-base: 16px; 
+    --fs-h1: 24px;   
+    
+    --primary-color: #3a0ca3;
+    --secondary-color: #13096c;
+    --bg-gradient: linear-gradient(135deg, #13096c, #3a0ca3);
+}
+
+/* 2. RESET */
 * {
     margin: 0;
     padding: 0;
@@ -6,25 +21,31 @@
 }
 
 body {
-    background: linear-gradient(135deg, #13096c, #3a0ca3);
-    height: 100vh;
+    background: var(--bg-gradient);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: var(--fs-base);
+    padding: 20px; 
 }
+
 
 main {
     background: #fff;
-    padding: 30px;
+    padding: var(--space-lg);
     border-radius: 15px;
-    width: 320px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    width: 100%; 
+    max-width: 320px; 
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #13096c;
+    color: var(--secondary-color);
+    font-size: var(--fs-h1);
 }
 
 .campo {
@@ -40,6 +61,7 @@ label {
 }
 
 input, select {
+    width: 100%; 
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -48,7 +70,7 @@ input, select {
 }
 
 input:focus, select:focus {
-    border-color: #3a0ca3;
+    border-color: var(--primary-color);
     box-shadow: 0 0 5px rgba(58, 12, 163, 0.3);
 }
 
@@ -57,7 +79,7 @@ button {
     padding: 12px;
     border: none;
     border-radius: 10px;
-    background: #3a0ca3;
+    background: var(--primary-color);
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -77,3 +99,13 @@ button:hover {
     font-weight: bold;
     color: #333;
 }
+
+/*dispositivos mobile*/
+@media (min-width: 768px) {
+
+    /* tablet e desktop */
+    main {
+        max-width: 320px; 
+    }
+}
+
