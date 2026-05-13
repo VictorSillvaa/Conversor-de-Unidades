@@ -1,45 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Unidades</title>
-    <link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gamer Pull</title>
+<link rel="stylesheet" href="css/body.css">
+<link rel="stylesheet" href="css/card.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/section.css">
 </head>
 <body>
-   
-    <main class="container">
-        <header>
-            <h1>Conversor de Unidades</h1>
-        </header>
 
-       
-        <section class="content">
-            <div class="campo">
-                <label for="valor">Digite o valor em metros:</label>
-                <input type="number" id="valor" placeholder="Ex: 10" required>
-            </div>
+<header>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="logo">
+    <span>GAMER</span><span>PULL</span>
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Pesquisar...">
+  </div>
+</header>
 
-            <div class="campo">
-                <label for="unidade"> Converter para:</label>
-                <select id="unidade">
-                    <option value="km"> Quilômetros</option>
-                    <option value="cm">Centímetros</option>
-                    <option value="mm">Milímetros</option>
-                </select>
-            </div>
+<main>
 
-            <button id="btn-converter">Converter</button>
-        </section>
+  <section id="section-destaques">
+    <h2>Destaques e Recomendados</h2>
+    <div class="games-grid">
+      <div class="game-card">
+        <div class="game-title">Red Dead Redemption II</div>
+        <div class="game-sub">Rockstar Games</div>
+      </div>
+      <div class="game-card">
+        <div class="game-title">Mortal Kombat 1</div>
+        <div class="game-sub">NetherRealm</div>
+      </div>
+      <div class="game-card">
+        <div class="game-title">Hogwarts Legacy</div>
+        <div class="game-sub">Avalanche</div>
+      </div>
+    </div>
+  </section>
 
-     
-        <footer id="resultado">
-            <p>O resultado aparecerá aqui.</p>
-        </footer>
-    </main>
+  <nav class="tabs">
+    <a href="#section-lancamentos">Lançamentos</a>
+    <a href="#section-ofertas">Ofertas</a>
+    <a href="#section-gratuitos">Jogos Gratuitos</a>
+  </nav>
 
-    <script src="script.js"></script>
+  <section id="section-lancamentos">
+    <h2>Lançamentos</h2>
+    <div class="games-grid">
+      <div class="game-card">
+        <div class="game-title">Elden Ring Nightreign</div>
+        <div class="game-sub">FromSoftware</div>
+      </div>
+      <div class="game-card">
+        <div class="game-title">GTA VI</div>
+        <div class="game-sub">Rockstar</div>
+      </div>
+      <div class="game-card">
+        <div class="game-title">Monster Hunter Wilds</div>
+        <div class="game-sub">Capcom</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-ofertas">
+    <h2>Ofertas</h2>
+    <div class="games-grid">
+      <div class="game-card">
+        <div class="game-title">Cyberpunk 2077</div>
+        <div class="game-sub">-60%</div>
+      </div>
+      <div class="game-card">
+        <div class="game-title">The Witcher 3</div>
+        <div class="game-sub">-75%</div>
+      </div>
+      <div class="game-card">
+        <div class="game-title">God of War Ragnarök</div>
+        <div class="game-sub">-40%</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-gratuitos">
+    <h2>Gratuitos</h2>
+    <div class="games-grid">
+      <div class="game-card">
+        <div class="game-title">EA Sports FC 26</div>
+        <div class="game-sub">EA Sports</div>
+      </div>
+      <div class="game-card">
+        <div class="game-title">Call of Duty Black Ops 7</div>
+        <div class="game-sub">Activision</div>
+      </div>
+      <div class="game-card">
+        <div class="game-title">The Alters</div>
+        <div class="game-sub">11 bit studios</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="logo"><span>GAMER</span><span>PULL</span></div>
+  <p>© 2026 Todos os direitos reservados. Todas as marcas registradas são propriedade dos seus respectivos donos no Brasil.</p>
+</footer>
+
 </body>
 </html>
