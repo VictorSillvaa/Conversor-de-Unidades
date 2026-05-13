@@ -1,0 +1,37 @@
+footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 16px; 
+  background: var(--dark);
+  text-align: center; 
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .logo {
+  display: inline-block; 
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+footer .logo span:first-child { 
+  color: var(--green); 
+}
+
+footer .logo span:last-child { 
+  color: var(--text); 
+  margin-left: 4px; 
+}
+
+footer p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 600px; 
+  margin: 0 auto;   
+}

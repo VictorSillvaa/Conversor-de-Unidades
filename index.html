@@ -2,37 +2,134 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/carrosel.css">
-    <title>Loja de jogos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamer Pull | Sua Loja de Jogos</title>
+  <!-- Links para seus arquivos CSS individuais -->
+  <link rel="stylesheet" href="components/body.css">
+  <link rel="stylesheet" href="components/card.css">
+  <link rel="stylesheet" href="components/footer.css">
+  <link rel="stylesheet" href="components/header.css">
+  <link rel="stylesheet" href="components/nav.css">
+  <link rel="stylesheet" href="components/section.css">
 </head>
+
 <body>
-    <header>
-        <h1>Loja de jogos</h1>
-    </header>
+         <!--começo do header-->
+  <header>
+    <button class="hamburger" aria-label="Abrir menu de navegação">
+      <span></span><span></span><span></span>
+    </button>
+    
+    <div class="logo">
+      <h1><span>GAMER</span><span>PULL</span></h1>
+    </div>
 
-    <hr>
+    <form class="search-bar" role="search">
+      <input type="search" placeholder="Pesquisar jogos, consoles...">
+    </form>
+  </header>
+    <!--final do header-->
 
-    <main>
-        <!-- Carrossel  -->
-        <div class="carrosel">
-            <div class="slides">
 
-                <img src="img/kombat.jpg"
-                    alt="Mortal kombat" />
+  <main>
 
-                <img src="img/Metro.jpg"
-                    alt="Metro" />
+    <section id="section-destaques">
+      <h2>Destaques e Recomendados</h2>
+      <div class="games-grid">
+        <article class="game-card">
+          <h3 class="game-title">Red Dead Redemption II</h3>
+          <p class="game-sub">Rockstar Games</p>
+        </article>
+        
+        <article class="game-card">
+          <h3 class="game-title">Mortal Kombat 1</h3>
+          <p class="game-sub">NetherRealm</p>
+        </article>
+        
+        <article class="game-card">
+          <h3 class="game-title">Hogwarts Legacy</h3>
+          <p class="game-sub">Avalanche</p>
+        </article>
+      </div>
+    </section>
 
-                <img src="img/Red.avif"
-                    alt="Red Dead II" />
+    <nav class="tabs" aria-label="Abas de categorias">
+      <ul>
+        <li><a href="#section-lancamentos">Lançamentos</a></li>
+        <li><a href="#section-ofertas">Ofertas</a></li>
+        <li><a href="#section-gratuitos">Jogos Gratuitos</a></li>
+      </ul>
+    </nav>
 
-            </div>
-        </div>
+    <section id="section-lancamentos">
+      <h2>Lançamentos</h2>
+      <div class="games-grid">
+        <article class="game-card">
+          <h3 class="game-title">Elden Ring Nightreign</h3>
+          <p class="game-sub">FromSoftware</p>
+        </article>
+        
+        <article class="game-card">
+          <h3 class="game-title">GTA VI</h3>
+          <p class="game-sub">Rockstar</p>
+        </article>
+        
+        <article class="game-card">
+          <h3 class="game-title">Monster Hunter Wilds</h3>
+          <p class="game-sub">Capcom</p>
+        </article>
+      </div>
+    </section>
 
-    </main>
-    <hr>
+    <section id="section-ofertas">
+      <h2>Ofertas</h2>
+      <div class="games-grid">
+        <article class="game-card">
+          <h3 class="game-title">Cyberpunk 2077</h3>
+          <p class="game-sub price-discount">-60%</p>
+        </article>
+        
+        <article class="game-card">
+          <h3 class="game-title">The Witcher 3</h3>
+          <p class="game-sub price-discount">-75%</p>
+        </article>
+        
+        <article class="game-card">
+          <h3 class="game-title">God of War Ragnarök</h3>
+          <p class="game-sub price-discount">-40%</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="section-gratuitos">
+      <h2>Gratuitos</h2>
+      <div class="games-grid">
+        <article class="game-card">
+          <h3 class="game-title">EA Sports FC 26</h3>
+          <p class="game-sub">EA Sports</p>
+        </article>
+        
+        <article class="game-card">
+          <h3 class="game-title">Call of Duty Black Ops 7</h3>
+          <p class="game-sub">Activision</p>
+        </article>
+        
+        <article class="game-card">
+          <h3 class="game-title">The Alters</h3>
+          <p class="game-sub">11 bit studios</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo"><span>GAMER</span><span>PULL</span></div>
+      <p>&copy; 2026 Todos os direitos reservados. Todas as marcas registradas são propriedade dos seus respectivos donos no Brasil.</p>
+    </div>
+  </footer>
 
 </body>
 
