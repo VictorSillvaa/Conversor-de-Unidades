@@ -1,0 +1,36 @@
+:root {
+    /* Cores Globais e Tokens de Design */
+    --color-primary-500: #2E75B6;
+    --color-primary-600: #1F4E79;
+    --color-dark: #111827;
+    --color-gray-100: #F9FAFB;
+    --color-gray-200: #E5E7EB;
+    --color-gray-700: #374151;
+    --color-gray-400: #9CA3AF;
+    
+    /* Mapeamento Semântico (Default Light) */
+    --color-bg-primary: #FFFFFF;
+    --color-bg-secondary: var(--color-gray-100);
+    --color-text-primary: var(--color-dark);
+    --color-text-secondary: var(--color-gray-700);
+    --color-border: var(--color-gray-200);
+    
+    /* Tipografia */
+    --font-primary: 'Inter', sans-serif;
+    --font-title: 'Poppins', sans-serif;
+    
+    /* Transições e Bordas */
+    --radius-md: 8px;
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Suporte Automático ao Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg-primary: #111827;
+        --color-bg-secondary: #1F2937;
+        --color-text-primary: #F9FAFB;
+        --color-text-secondary: #9CA3AF;
+        --color-border: #374151;
+    }
+}

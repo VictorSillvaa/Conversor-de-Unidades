@@ -2,135 +2,122 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gamer Pull | Sua Loja de Jogos</title>
-  <!-- Links para seus arquivos CSS individuais -->
-  <link rel="stylesheet" href="components/body.css">
-  <link rel="stylesheet" href="components/card.css">
-  <link rel="stylesheet" href="components/footer.css">
-  <link rel="stylesheet" href="components/header.css">
-  <link rel="stylesheet" href="components/nav.css">
-  <link rel="stylesheet" href="components/section.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore | Seus Jogos Favoritos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <link rel="stylesheet" href="css/components/btn.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+
+    <link rel="stylesheet" href="css/utilities.css">
 </head>
 
 <body>
-         <!--começo do header-->
-  <header>
-    <button class="hamburger" aria-label="Abrir menu de navegação">
-      <span></span><span></span><span></span>
-    </button>
-    
-    <div class="logo">
-      <h1><span>GAMER</span><span>PULL</span></h1>
-    </div>
 
-    <form class="search-bar" role="search">
-      <input type="search" placeholder="Pesquisar jogos, consoles...">
-    </form>
-  </header>
-    <!--final do header-->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="navbar__logo">Game<span>Store</span></a>
 
+            <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="navbar__hamburger"></span>
+            </button>
 
-  <main>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="#" class="navbar__link">Início</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Catálogo</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Promoções</a></li>
+                <li class="navbar__item"><a href="#Suporte" class="navbar__link">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="section-destaques">
-      <h2>Destaques e Recomendados</h2>
-      <div class="games-grid">
-        <article class="game-card">
-          <h3 class="game-title">Red Dead Redemption II</h3>
-          <p class="game-sub">Rockstar Games</p>
-        </article>
-        
-        <article class="game-card">
-          <h3 class="game-title">Mortal Kombat 1</h3>
-          <p class="game-sub">NetherRealm</p>
-        </article>
-        
-        <article class="game-card">
-          <h3 class="game-title">Hogwarts Legacy</h3>
-          <p class="game-sub">Avalanche</p>
-        </article>
-      </div>
-    </section>
+    <main class="main">
+        <section class="section">
+            <div class="section__container">
+                <h2 class="section__title">Jogos em Destaque</h2>
 
-    <nav class="tabs" aria-label="Abas de categorias">
-      <ul>
-        <li><a href="#section-lancamentos">Lançamentos</a></li>
-        <li><a href="#section-ofertas">Ofertas</a></li>
-        <li><a href="#section-gratuitos">Jogos Gratuitos</a></li>
-      </ul>
-    </nav>
+                <div class="cards-grid">
+                    <article class="card card--featured">
+                        <div class="card__badge">Destaque da Semana</div>
+                        <div class="card__content">
+                            <img src="" alt="">
+                            <h3 class="card__title">Elden Ring: Shadow of the Erdtree</h3>
+                            <p class="card__category">RPG / Ação</p>
+                            <p class="card__price">R$ 199,90</p>
+                            <button class="btn btn--primary">Comprar Agora</button>
+                        </div>
+                    </article>
 
-    <section id="section-lancamentos">
-      <h2>Lançamentos</h2>
-      <div class="games-grid">
-        <article class="game-card">
-          <h3 class="game-title">Elden Ring Nightreign</h3>
-          <p class="game-sub">FromSoftware</p>
-        </article>
-        
-        <article class="game-card">
-          <h3 class="game-title">GTA VI</h3>
-          <p class="game-sub">Rockstar</p>
-        </article>
-        
-        <article class="game-card">
-          <h3 class="game-title">Monster Hunter Wilds</h3>
-          <p class="game-sub">Capcom</p>
-        </article>
-      </div>
-    </section>
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Cyberpunk 2077</h3>
+                            <p class="card__category">Ficção Científica / RPG</p>
+                            <p class="card__price">R$ 99,90</p>
+                            <button class="btn btn--outline">Adicionar ao Carrinho</button>
+                        </div>
+                    </article>
 
-    <section id="section-ofertas">
-      <h2>Ofertas</h2>
-      <div class="games-grid">
-        <article class="game-card">
-          <h3 class="game-title">Cyberpunk 2077</h3>
-          <p class="game-sub price-discount">-60%</p>
-        </article>
-        
-        <article class="game-card">
-          <h3 class="game-title">The Witcher 3</h3>
-          <p class="game-sub price-discount">-75%</p>
-        </article>
-        
-        <article class="game-card">
-          <h3 class="game-title">God of War Ragnarök</h3>
-          <p class="game-sub price-discount">-40%</p>
-        </article>
-      </div>
-    </section>
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">EA SPORTS FC 26</h3>
+                            <p class="card__category">Esportes</p>
+                            <p class="card__price">R$ 249,90</p>
+                            <button class="btn btn--outline">Adicionar ao Carrinho</button>
+                        </div>
+                    </article>
 
-    <section id="section-gratuitos">
-      <h2>Gratuitos</h2>
-      <div class="games-grid">
-        <article class="game-card">
-          <h3 class="game-title">EA Sports FC 26</h3>
-          <p class="game-sub">EA Sports</p>
-        </article>
-        
-        <article class="game-card">
-          <h3 class="game-title">Call of Duty Black Ops 7</h3>
-          <p class="game-sub">Activision</p>
-        </article>
-        
-        <article class="game-card">
-          <h3 class="game-title">The Alters</h3>
-          <p class="game-sub">11 bit studios</p>
-        </article>
-      </div>
-    </section>
+                    <article class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Hades II</h3>
+                            <p class="card__category">Roguelike / Indie</p>
+                            <p class="card__price">R$ 89,99</p>
+                            <button class="btn btn--outline">Adicionar ao Carrinho</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col">
+                <h4 class="footer__title">GameStore</h4>
+                <p class="footer__text">A sua melhor loja de jogos digitais. Atendimento 24h e chaves de ativação
+                    imediata.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Links Úteis</h4>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Termos de Serviço</a></li>
+                    <li><a href="#" class="footer__link">Política de Reembolso</a></li>
+                    <li><a href="#" class="footer__link">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div id="Suporte" class="footer__col">
+                <h4 class="footer__title">Contato</h4>
+                <p class="footer__text">contato@gamestore.com</p>
+                <p class="footer__text">João Pessoa, PB</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; <span id="year"></span> GameStore. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-  <footer>
-    <div class="footer-content">
-      <div class="logo"><span>GAMER</span><span>PULL</span></div>
-      <p>&copy; 2026 Todos os direitos reservados. Todas as marcas registradas são propriedade dos seus respectivos donos no Brasil.</p>
-    </div>
-  </footer>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>

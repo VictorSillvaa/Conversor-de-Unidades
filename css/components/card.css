@@ -1,0 +1,63 @@
+.card {
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2.4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 25rem;
+    transition: transform 0.3s var(--transition-smooth), box-shadow 0.3s var(--transition-smooth);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Variante de Destaque */
+.card--featured {
+    background: linear-gradient(135deg, var(--color-primary-600), var(--color-dark));
+    color: #FFFFFF;
+    border: none;
+}
+
+.card__badge {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    background-color: var(--color-primary-500);
+    color: #FFFFFF;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.card__title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.card__category {
+    font-size: 1.4rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.6rem;
+}
+
+.card--featured .card__category {
+    color: var(--color-gray-400);
+}
+
+.card__price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-primary-500);
+    margin-bottom: 2rem;
+}
+
+.card--featured .card__price {
+    color: #FFFFFF;
+}
