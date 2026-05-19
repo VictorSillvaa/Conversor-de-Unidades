@@ -1,0 +1,14 @@
+:root {
+  /* Cores Globais (Primitivos) */
+  --_color-primary-500: #2E75B6;
+  --_color-primary-600: #1F4E79;
+  --_color-dark: #111827;
+  --_color-gray-100: #F9FAFB;
+  --_color-gray-200: #E5E7EB;
+  --_color-gray-400: #9CA3AF;
+  --_color-gray-700: #374151;
+  
+  /* Bordas e Transições brutas também entram aqui */
+  --_radius-md: 8px;
+  --_transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}

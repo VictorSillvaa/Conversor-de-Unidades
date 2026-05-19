@@ -1,0 +1,23 @@
+        :root {
+  /* Mapeamento Semântico (Default - Light) */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: var(--_color-gray-100);
+  --color-text-primary: var(--_color-dark);
+  --color-text-secondary: var(--_color-gray-700);
+  --color-border: var(--_color-gray-200);
+  
+  /* Raio de borda e transição semântica */
+  --radius-default: var(--_radius-md);
+  --transition-action: var(--_transition-smooth);
+}
+
+/* Suporte Automático ao Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: var(--_color-dark);
+    --color-bg-secondary: #1F2937; 
+    --color-text-primary: var(--_color-gray-100);
+    --color-text-secondary: var(--_color-gray-400);
+    --color-border: var(--_color-gray-700);
+  }
+}

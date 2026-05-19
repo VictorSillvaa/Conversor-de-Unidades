@@ -1,0 +1,21 @@
+/* Ponto de entrada - Ordem correta de importações */
+
+/* 1. Camada de Tokens */
+@import "./tokens/primitives.css";
+@import "./tokens/semantic.css";
+@import "./tokens/spacing.css";
+@import "./tokens/typography.css";
+
+/* 2. Camada de Base / Reset */
+@import "./reset.css";
+@import "./base.css";
+
+/* 3. Camada de Layout e Componentes */
+@import "./layout.css";
+@import "./utilities.css";
+
+/* 4. Importar os componentes que estão na pasta components/ */
+@import "./components/navbar.css";
+@import "./components/card.css";
+@import "./components/btn.css";
+@import "./components/footer.css";
