@@ -1,14 +1,14 @@
 .card {
     background-color: var(--color-bg-primary);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: 2.4rem;
+    border-radius: var(--radius-default);
+    padding: var(--space-6);
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     min-height: 25rem;
-    transition: transform 0.3s var(--transition-smooth), box-shadow 0.3s var(--transition-smooth);
+    transition: transform 0.3s var(--transition-global), box-shadow 0.3s var(--transition-global);
 }
 
 .card:hover {
@@ -18,46 +18,58 @@
 
 /* Variante de Destaque */
 .card--featured {
-    background: linear-gradient(135deg, var(--color-primary-600), var(--color-dark));
-    color: #FFFFFF;
+    background: linear-gradient(135deg, var(--color-primary-hover), var(--color-text-primary));
+    color: var(--color-text-light);
     border: none;
 }
 
 .card__badge {
     position: absolute;
-    top: 1.6rem;
-    left: 1.6rem;
-    background-color: var(--color-primary-500);
-    color: #FFFFFF;
-    padding: 0.4rem 1.2rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border-radius: 50px;
+    top: var(--space-4);
+    left: var(--space-4);
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    border-radius: var(--radius-badge);
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
 }
 
 .card__title {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
+    font-size: var(--font-size-md);
+    color: inherit;
+}
+
+/* Seletor condicional para ajustar a cor do texto caso o card não seja o destacado */
+.card:not(.card--featured) .card__title {
+    color: var(--color-text-primary);
 }
 
 .card__category {
-    font-size: 1.4rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 1.6rem;
+    font-size: var(--font-size-sm);
 }
 
-.card--featured .card__category {
-    color: var(--color-gray-400);
+.card:not(.card--featured) .card__category {
+    color: var(--color-text-secondary);
 }
 
 .card__price {
-    font-size: 2.4rem;
+    font-size: var(--font-size-base);
     font-weight: 700;
-    color: var(--color-primary-500);
-    margin-bottom: 2rem;
 }
 
-.card--featured .card__price {
-    color: #FFFFFF;
+.card:not(.card--featured) .card__price {
+    color: var(--color-primary);
+}
+
+.card .btn {
+    margin-top: var(--space-2);
 }
