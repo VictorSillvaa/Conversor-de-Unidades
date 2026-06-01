@@ -168,3 +168,55 @@
     border-radius: 8px;
   }
 }
+
+@media (min-width: 900px) {
+    .navbar__menu {
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        padding: 0;
+        align-items: center;
+        margin-left: auto; /* empurra o menu para a direita */
+    }
+
+    .navbar__item {
+        list-style: none;
+        margin: 0;
+    }
+
+    .navbar__link {
+        font-weight: 500;
+        font-size: var(--font-size-base);
+        color: var(--color-text-primary);
+        padding: 8px 6px;
+    }
+
+    /* esconder o botão hambúrguer no desktop */
+    .navbar__toggle {
+        display: none;
+    }
+}
+
+/* manter comportamento mobile (hambúrguer visível, menu oculto até ativado) */
+@media (max-width: 899px) {
+    .navbar__menu {
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-bg-primary);
+        border-bottom: 1px solid var(--color-border);
+        display: none;
+        flex-direction: column;
+        padding: var(--space-5);
+        gap: var(--space-5);
+    }
+    .navbar__menu--active { display: flex; }
+    .navbar__toggle { display: block; margin-left: auto; }
+}
